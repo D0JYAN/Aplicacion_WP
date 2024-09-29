@@ -21,11 +21,11 @@
 </head>
 
 <body>
+    <?php
+    include("navbar.php");
+    ?>
+    
     <div class="container-fliud">
-
-        <?php
-        include("navbar.php");
-        ?>
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                <img src="img/img_002.webp" class="card-img-top">
+                    <img src="img/img_002.webp" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -70,7 +70,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                <img src="img/img_003.webp" class="card-img-top">
+                    <img src="img/img_003.webp" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -84,7 +84,6 @@
     <?php
     include("footer.php");
     ?>
-    
 </body>
 
 </html>
