@@ -14,12 +14,19 @@
     <link rel="manifest" href="manifest.json">
     <!--Estilos-->
     <link rel="stylesheet" href="css/estilo_001.css">
+    <!--Servicio-->
+    <script src="serviceworker.js"></script>
 
     <title>Home</title>
 </head>
 
 <body>
     <div class="container-fliud">
+
+    <?php
+    include("navbar.php");
+    ?>
+
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
