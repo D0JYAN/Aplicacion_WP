@@ -23,9 +23,9 @@
 <body>
     <div class="container-fliud">
 
-    <?php
-    include("navbar.php");
-    ?>
+        <?php
+        include("navbar.php");
+        ?>
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -53,6 +53,33 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+    </div>
+
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                <img src="img/RF_02.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/RF_02.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
