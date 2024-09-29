@@ -35,13 +35,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/RF_01.png" class="d-block w-100" alt="...">
+                    <img src="img/img_001.webp" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/RF_02.png" class="d-block w-100" alt="...">
+                    <img src="img/img_004.webp" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/RF_01.png" class="d-block w-100" alt="...">
+                    <img src="img/img_005.webp" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                <img src="img/RF_02.png" class="card-img-top">
+                <img src="img/img_002.webp" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -70,7 +70,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                <img src="img/RF_02.png" class="card-img-top">
+                <img src="img/img_003.webp" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
