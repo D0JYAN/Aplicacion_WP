@@ -24,7 +24,7 @@
     <?php
     include("navbar.php");
     ?>
-    
+
     <div class="container-fliud">
 
         <div id="carouselExampleIndicators" class="carousel slide">
@@ -62,9 +62,12 @@
                 <div class="card">
                     <img src="img/img_002.webp" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">
+                            Valve (los creadores de Counter-Strike, Half-Life y otros) presenta Left 4 Dead, una nueva aventura cooperativa de acción y 
+                            terror para PC y Xbox 360, que coloca a cuatro jugadores en una épica batalla por la supervivencia contra aterradoras hordas de zombis y monstruos 
+                            mutantes.
+                        </p>
+                        <a href="https://store.steampowered.com/app/500/Left_4_Dead/" class="btn btn-success">Donde Comprar</a>
                     </div>
                 </div>
             </div>
@@ -72,9 +75,11 @@
                 <div class="card">
                     <img src="img/img_003.webp" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">
+                        Ambientado en el apocalipsis zombi, Left 4 Dead 2 (L4D2) es la esperadísima secuela del galardonado Left 4 Dead, el juego cooperativo número 1 de 2008. 
+                        Este FPS cooperativo de acción terrorífica lleva a tus amigos y a ti a través de ciudades, pantanos y cementerios del Profundo Sur de EE. UU.
+                        </p>
+                        <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" class="btn btn-success">Donde Comprar</a>
                     </div>
                 </div>
             </div>
