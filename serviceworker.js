@@ -1,4 +1,4 @@
-const currentCache =  'cache-v2.0';
+const currentCache =  'cache-v2.1';
 
 const files = 
 [
