@@ -61,3 +61,7 @@ html::-webkit-scrollbar {
     backdrop-filter: blur(10px); /* Difuminado del fondo */
     color: gray;
 }
+
+img.img_navbar {
+    filter: drop-shadow(2px 4px 6px white);
+}
