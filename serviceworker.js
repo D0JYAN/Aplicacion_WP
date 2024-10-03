@@ -2,11 +2,9 @@ const currentCache =  'cache-v2.0';
 
 const files = 
 [
-    'css/**/*.css',
-    'js/**/*.js',
-    'img/**/*.png',
-    'img/**/*.jpg',
-    'img/**/*.svg',
+    'css/estilo_001.css',
+    'css/estilo_002.css',
+    'img/icon_logo.png',
     'index.php'
 ];
 
