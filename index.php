@@ -25,7 +25,7 @@
     include("navbar.php");
     ?>
 
-    <div class="container-fliud">
+    <div class="container-fluid">
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">

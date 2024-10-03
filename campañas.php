@@ -25,7 +25,7 @@
     include("navbar.php");
     ?>
 
-    <div class="container-fliud">
+    <div class="container-fluid">
         Hola
     </div>
 
