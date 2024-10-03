@@ -10,12 +10,12 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "img/icon.png",
+            "src": "img/icon_logo.png",
             "type": "image/png",
             "sizes": "32x32"
         },
         {
-            "src": "img/icon.png",
+            "src": "img/icon_logo.png",
             "type": "image/png",
             "sizes": "250x250"
         }
