@@ -1,12 +1,12 @@
 {
     "scope": ".",
-    "name": "Web Progresiva",
-    "short_name": "AWP",
+    "name": "Wiki Left 4 Dead",
+    "short_name": "Wiki L4D",
     "start_url": "index.php",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4db6ac",
-    "description": "Ejemplo de AWP",
+    "description": "Aplicacion sobre left 4 dead",
     "orientation": "portrait-primary",
     "icons": [
         {
