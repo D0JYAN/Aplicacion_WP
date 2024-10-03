@@ -1,10 +1,10 @@
-const currentCache =  'cache-v2.1';
+const currentCache =  'cache-v2.0';
 
 const files = 
 [
     'css/estilo_001.css',
     'css/estilo_002.css',
-    'img/icon_logo.png',
+    'img/logo.png',
     'index.php'
 ];
 
