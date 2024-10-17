@@ -37,3 +37,9 @@ html {
 html::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
 }
+
+.card {
+    background-color: #283e06;
+    color: black;
+    font-weight: bold;
+}

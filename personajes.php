@@ -155,12 +155,11 @@
                             <div class="card-body">
                                 <h5 class="card-title">Ellis</h5>
                                 <p class="card-text">
-                                    Ellis es el miembro más joven y entusiasta de su grupo de supervivientes, siendo originario de la ciudad de Savannah al igual de Coach.
+                                    Es el miembro más joven y entusiasta de su grupo de supervivientes, siendo originario de la ciudad de Savannah.
                                     Es bastante optimista y amigable con el resto de sus compañeros, algo que se demuestra con sus líneas de voz durante el juego.
                                     Lo más característico de él son las historias que cuenta durante las campañas sobre su amigo Keith en un intento por agradar a sus
                                     nuevos amigos. También es fanático de la banda de los Midnight Riders y el corredor de coches Jimmy Gibbs Jr, a quién considera un
-                                    ídolo americano. Lleva puesto su overol de trabajo amarrado a la cintura, una playera color amarillo con un logotipo en negro y la
-                                    gorra del taller en que trabajaba.
+                                    ídolo americano.
                                 </p>
                             </div>
                         </div>
