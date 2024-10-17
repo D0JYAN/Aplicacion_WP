@@ -99,14 +99,48 @@
         async function registerSW() {
             if ('serviceWorker' in navigator) {
                 try {
-                    await navigator
-                        .serviceWorker
-                        .register('serviceworker.js');
-                } catch (e) {
-                    console.log('Error en el registro del SW');
+                    const registration = await navigator.serviceWorker.register('serviceworker.js');
+                    console.log('Service Worker registrado con éxito:', registration);
+                } catch (error) {
+                    console.log('Fallo en el registro del Service Worker:', error);
                 }
             }
         }
+
+        var vPrompt;
+        window.addEventListener("beforeinstallprompt", function(e) {
+            e.preventDefault();
+            vPrompt = e;
+            AgregarClickMostrar();
+        });
+
+        function AgregarClickMostrar() {
+            var ejemploprompt = document.querySelector(".ejemploprompt");
+            ejemploprompt.style.display = 'block';
+            ejemploprompt.addEventListener("click", mostrarprompt);
+        }
+
+        function mostrarprompt() {
+            var ejemploprompt = document.querySelector(".ejemploprompt");
+            ejemploprompt.style.display = 'none';
+            vPrompt.prompt();
+            vPrompt,userchoice.then(function(choiceResult) {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('El usuario aceptó el prompt');
+                } else {
+                    console.log('El usuario canceló el prompt');
+                }
+                vPrompt = null;
+            })
+        }
+
+        window.addEventListener('appinstalled', () => {
+            //Esconder la promocion de instalacion de la PWA
+            var ejemploprompt = document.querySelector(".ejemploprompt");
+            ejemploprompt.style.display = 'none';
+            deferredPrompt = null;
+            console.log('La PWA se ha instalado correctamente');
+        });
     </script>
 </body>
 
