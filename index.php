@@ -112,9 +112,11 @@
         var vPrompt;
         window.addEventListener("beforeinstallprompt", function(e) {
             e.preventDefault();
-            vPrompt = e;// Aquí se define vPrompt
-            AgregarClickMostrar();// Llamas a la función para mostrar el botón
+            vPrompt = e;
+            console.log("beforeinstallprompt disparado"); // Agregar este log
+            AgregarClickMostrar(); // Llamar a la función para mostrar el botón
         });
+
 
 
         // Función para agregar el evento de clic al botón con clase "ejemploprompt"
@@ -130,16 +132,22 @@
         function mostrarprompt() {
             var ejemploprompt = document.querySelector(".ejemploprompt");
             ejemploprompt.style.display = 'none'; // Ocultar el botón
-            vPrompt.prompt(); // Mostrar el prompt de instalación
-            vPrompt.userChoice.then(function(choiceResult) {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('El usuario aceptó el prompt');
-                } else {
-                    console.log('El usuario canceló el prompt');
-                }
-                vPrompt = null; // Limpiar el valor de vPrompt
-            });
+
+            if (vPrompt) { // Verifica si vPrompt está definido
+                vPrompt.prompt(); // Mostrar el prompt de instalación
+                vPrompt.userChoice.then(function(choiceResult) {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('El usuario aceptó el prompt');
+                    } else {
+                        console.log('El usuario canceló el prompt');
+                    }
+                    vPrompt = null; // Limpiar el valor de vPrompt
+                });
+            } else {
+                console.log("No hay instalación pendiente."); // Mensaje en caso de que no esté definido
+            }
         }
+
 
         // Escuchar el evento de instalación de la PWA
         window.addEventListener('appinstalled', () => {

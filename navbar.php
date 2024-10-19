@@ -23,8 +23,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="items.php">Items</a>
                 </li>
-                <li>
-                    <button type="button" class="ejemploprompt" style="margin-left: 15px;">Descargar</button>
+                <li class="nav-item">
+                    <button type="button" class="ejemploprompt">Descargar</button>
                 </li>
             </ul>
         </div>
