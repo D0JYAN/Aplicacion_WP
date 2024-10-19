@@ -43,3 +43,35 @@ html::-webkit-scrollbar {
     color: black;
     font-weight: bold;
 }
+
+.card img {
+    object-fit: cover; /* Mantiene las proporciones de la imagen */
+    object-position: center; /* Centra la imagen en el contenedor */
+}
+
+.ejemploprompt {
+    color: #198754; /* Color del texto (verde) */
+    border: 1px solid #198754; /* Borde del mismo color que el texto */
+    background-color: transparent; /* Fondo transparente */
+    padding: 0.375rem 0.75rem; /* Padding similar al de Bootstrap */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    border-radius: 0.25rem; /* Borde redondeado */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transiciones */
+    cursor: pointer; /* Cambia el cursor al de pointer */
+}
+
+.ejemploprompt:hover {
+    color: #fff; /* Cambiar el color del texto al blanco */
+    background-color: #198754; /* Fondo verde al hacer hover */
+    border-color: #198754; /* Mantiene el color del borde al hacer hover */
+}
+
+.ejemploprompt:focus {
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5); /* Sombra para accesibilidad al hacer focus */
+    outline: none; /* Elimina el borde predeterminado de focus */
+}
+
+.ejemploprompt:active {
+    background-color: #146c43; /* Color más oscuro cuando se presiona */
+    border-color: #146c43; /* Cambiar el borde al presionar */
+}

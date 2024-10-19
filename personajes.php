@@ -29,7 +29,7 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -76,7 +76,7 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -99,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -124,7 +124,7 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -171,7 +171,7 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -193,7 +193,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
