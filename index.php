@@ -58,7 +58,7 @@
 
     <div class="container text-center">
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                     <img src="img/img_002.webp" class="card-img-top">
                     <div class="card-body">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                     <img src="img/img_003.webp" class="card-img-top">
                     <div class="card-body">
@@ -92,10 +92,12 @@
 
     <script>
         window.addEventListener('load', () => {
-            registerSW();
+            // Llamar a las funciones cuando la página está completamente cargada
+            registerSW(); // Registrar el Service Worker
+            AgregarClickMostrar(); // Agregar el evento de clic al botón
         });
 
-        // Register the Service Worker
+        // Función para registrar el Service Worker
         async function registerSW() {
             if ('serviceWorker' in navigator) {
                 try {
@@ -107,41 +109,38 @@
             }
         }
 
-        var vPrompt;
-        window.addEventListener("beforeinstallprompt", function(e) {
-            e.preventDefault();
-            vPrompt = e;
-            AgregarClickMostrar();
-        });
-
+        // Función para agregar el evento de clic al botón con clase "ejemploprompt"
         function AgregarClickMostrar() {
             var ejemploprompt = document.querySelector(".ejemploprompt");
-            ejemploprompt.style.display = 'block';
-            ejemploprompt.addEventListener("click", mostrarprompt);
+            if (ejemploprompt) { // Asegurarse de que el botón exista
+                ejemploprompt.style.display = 'block'; // Asegúrate de que sea visible
+                ejemploprompt.addEventListener("click", mostrarprompt); // Agregar el evento de clic
+            }
         }
 
+        // Función que se ejecuta cuando se hace clic en el botón "Descargar"
         function mostrarprompt() {
             var ejemploprompt = document.querySelector(".ejemploprompt");
-            ejemploprompt.style.display = 'none';
-            vPrompt.prompt();
-            vPrompt,userchoice.then(function(choiceResult) {
+            ejemploprompt.style.display = 'none'; // Ocultar el botón
+            vPrompt.prompt(); // Mostrar el prompt de instalación
+            vPrompt.userChoice.then(function(choiceResult) {
                 if (choiceResult.outcome === 'accepted') {
                     console.log('El usuario aceptó el prompt');
                 } else {
                     console.log('El usuario canceló el prompt');
                 }
-                vPrompt = null;
-            })
+                vPrompt = null; // Limpiar el valor de vPrompt
+            });
         }
 
+        // Escuchar el evento de instalación de la PWA
         window.addEventListener('appinstalled', () => {
-            //Esconder la promocion de instalacion de la PWA
             var ejemploprompt = document.querySelector(".ejemploprompt");
-            ejemploprompt.style.display = 'none';
-            deferredPrompt = null;
+            ejemploprompt.style.display = 'none'; // Ocultar el botón cuando la PWA esté instalada
             console.log('La PWA se ha instalado correctamente');
         });
     </script>
+
 </body>
 
 </html>
