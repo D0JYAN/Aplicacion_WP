@@ -109,6 +109,14 @@
             }
         }
 
+        var vPrompt;
+        window.addEventListener("beforeinstallprompt", function(e) {
+            e.preventDefault();
+            vPrompt = e;// Aquí se define vPrompt
+            AgregarClickMostrar();// Llamas a la función para mostrar el botón
+        });
+
+
         // Función para agregar el evento de clic al botón con clase "ejemploprompt"
         function AgregarClickMostrar() {
             var ejemploprompt = document.querySelector(".ejemploprompt");
