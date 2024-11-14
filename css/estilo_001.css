@@ -43,13 +43,6 @@ body {
     margin-bottom: 12px;
 }
 
-footer {
-    padding: 0;
-    margin-top: 12px;
-    border-top: 1px gray solid;
-    color: gray;
-}
-
 /* Ocultar la barra de desplazamiento inicialmente */
 html {
     scrollbar-width: none; /* Firefox */
